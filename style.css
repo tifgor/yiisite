@@ -1,12 +1,7 @@
 html, body {
     height: 100%;
-    overflow-y: scroll;
     margin: 0;
     padding: 0;
-}
-
-body {
-    min-height: 100vh;
 }
 
 .header-container {
@@ -18,10 +13,11 @@ body {
 body {
     background: black url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     color: lime;
-    font-family: "Comic Sans MS", "Courier New", monospace;
+    font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", "Chalkboard SE", cursive, sans-serif;
     text-align: center;
     margin: 0;
     cursor: crosshair;
+    min-height: 100vh;
 }
 
 h1 {
@@ -35,9 +31,9 @@ h2 {
     font-size: 30px;
     background: repeating-linear-gradient(
         45deg,
-        #00ffe1,
-        #00ffe1 12px,
-        #ff2fa0 12px,
+        #00ffdd,
+        #00ffdd 12px,
+        #d371a7 12px,
         #ff2fa0 24px
     );
     color: white;
@@ -65,8 +61,8 @@ button {
     font-size: 22px;
     background: repeating-linear-gradient(
         -45deg,
-        #00ffe1,
-        #00ffe1 10px,
+        #00ffdd,
+        #00ffdd 10px,
         #ff2fa0 10px,
         #ff2fa0 20px
     );
@@ -83,7 +79,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0 20px #ff2fa0, 0 0 40px #00ffe1;
+    box-shadow: 0 0 20px #ff2fa0, 0 0 40px #00ffdd;
     transform: scale(1.1) rotate(-1deg);
 }
 
@@ -91,10 +87,22 @@ button:hover {
     display: inline-block;
     font-size: 24px;
     margin: 10px 0;
-    color: cyan;
+    color: #00ffdd;
     text-decoration: underline;
     animation: rainbow 3s infinite;
     padding: 0; 
+}
+
+.links a.hidden-link {
+    all: unset;
+    color: rgb(6, 129, 6);
+    cursor: pointer;
+    display: inline;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    animation: none;
 }
 
 .marquee {
@@ -141,7 +149,7 @@ button:hover {
 
 .release-description {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: monospace;
 }
 
@@ -161,7 +169,7 @@ button:hover {
     color: white;
     font-size: 20px;
     animation: fall linear infinite;
-    text-shadow: 0 0 10px cyan, 0 0 20px magenta;
+    text-shadow: 0 0 10px #00ffdd, 0 0 20px magenta;
     filter: blur(0.5px);
     z-index: 1;
 }
